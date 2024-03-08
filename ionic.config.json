@@ -1,0 +1,7 @@
+{
+  "name": "appFotoGalery",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

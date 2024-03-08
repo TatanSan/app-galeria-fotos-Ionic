@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> 
+      Galeria <!--renombramos el boton-->
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <ion-grid><!--creacion de grilla para almacenar fotos-->
+    <ion-row><!--definimos el tamaño de las columnas y su posicion-->
+      <ion-col size="6"
+      *ngFor="let foto of FotoService.fotos; index as position">
+      <ion-img [src]="foto.webviewPath"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <!--configuramos la posicion del boton, ubicacion y posicion sobre cualquier objeto-->
+  <ion-fab-button (click)="addPhotoToGallery()">
+    <ion-icon name="camera"></ion-icon><!--propiedad para llamar el icono llamado "camera"-->
+  </ion-fab-button>
+</ion-fab>
+</ion-content>
