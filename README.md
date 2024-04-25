@@ -1,0 +1,1 @@
+Este proyecto basico con IONIC, hecho con VSC permite el manejo con NODE.JS y Android Studio, el acceso a componentes y permisos de un dispotivo movil como la camara, la ubicacion, storage, files. Manejo con NPM, Gradle, actualizaciones, entre otros.
